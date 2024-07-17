@@ -1,0 +1,56 @@
+.project__card__tags span {
+  display: inline-block;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+
+.html {
+  background-color: #e34c25;
+}
+.css {
+  background-color: #563d7c;
+}
+.scss {
+  background-color: #c6538c;
+}
+.javascript {
+  background-color: #c0aa05;
+  color: white;
+}
+.nodejs {
+  background-color: #8fc706;
+}
+.reactjs {
+  background-color: #65dbfb;
+}
+.python {
+  background-color: #3572a5;
+}
+.php {
+  background-color: #4f5d95;
+}
+.cpp {
+  background-color: #f34b7d;
+}
+.csharp {
+  background-color: #9f559a;
+}
+.c {
+  background-color: #555555;
+}
+.batch {
+  background-color: #c1f12d;
+}
+.mongodb {
+  background-color: #00ac41;
+}
+.other {
+  background-color: grey;
+}
+.test {
+  border: 2px #c0aa05 solid;
+}

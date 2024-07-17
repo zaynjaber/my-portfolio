@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index-style.css" />
+    <link rel="stylesheet" href="styles/index-tags.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/assets/img/title-logo.png" />
+    <title>Zayn Jaber | Full-Stack Web Developer</title>
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <!--        Java Script         -->
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--        Java Script         -->
+    <div class="hero">
+      <div class="hero_heading">
+        <div class="hero__heading__line-1">
+          Hi, <br />I'm <span>Zayn</span>.
+        </div>
+        <div class="hero__heading__line-2">
+          I'm a <span class="auto-type"></span>.
+        </div>
+
+        <!--        Java Script         -->
+        <script src="/js/hero-typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: ["Software Engineer", "Tech Enthusiast", "Coffee Addict"],
+            typeSpeed: 110,
+            backSpeed: 50,
+            backDelay: 1500,
+            loop: true,
+          });
+        </script>
+        <!--        Java Script         -->
+
+        <div class="button-1-wrapper">
+          <button class="button-1__back-layer">
+            <a class="button-1__front-layer" href="/#about">Dive In</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--       About ME SECITON        -->
+
+    <section class="about-container" id="about">
+      <div class="section-title">
+        <h2>About<span></span></h2>
+      </div>
+
+      <div class="about_content">
+        <div class="about__picture-frame">
+          <img src="assets/img/about.jpg" />
+        </div>
+
+        <!-- INFO -->
+        <div class="about__info"></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", (event) => {
+            const target = document.querySelector(".about__info");
+
+            const observer = new IntersectionObserver(
+              (entries, observer) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    console.log("about__info section is in view");
+                    var typed = new Typed(".about__info", {
+                      typeSpeed: 5,
+                    });
+
+                    // Unobserve the element if you only want the code to run once
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              {
+                root: null, // Use the viewport as the container
+                rootMargin: "0px", // No margin around the root
+                threshold: 0.1, // Trigger when 10% of the target is in view
+              }
+            );
+
+            observer.observe(target);
+          });
+        </script>
+        <script src="js/about-typed.umd.js"></script>
+      </div>
+    </section>
+
+    <!--       Project's SECITON        -->
+
+    <section class="project-container" id="projects">
+      <div class="section-title">
+        <h2>Project's<span></span></h2>
+      </div>
+
+      <div class="project_content">
+        <!-- Project 1 -->
+        <div class="project__card">
+          <div class="project__display">
+            <img src="assets/img/projects/omnifoodproject.jpeg" alt="" />
+          </div>
+
+          <div class="project__details">
+            <div class="project__card__tags">
+              <span class="html">html</span>
+              <span class="css">css</span>
+              <span class="javascript">java script</span>
+              <span class="reactjs">React</span>
+              <span class="nodejs">node.js</span>
+              <span class="mongodb">mongo db</span>
+              <span class="php">php</span>
+              <span class="csharp">c#</span>
+            </div>
+
+            <div class="project__card__title">
+              Omni Food Products | Healthy Food Plans
+            </div>
+
+            <div class="project__card__buttons">
+              <button class="button-1__back-layer">
+                <a class="button-1__front-layer">Preview</a>
+              </button>
+              <button class="button-1__back-layer">
+                <a class="button-1__front-layer">View on Github</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project__card">
+          <div class="project__display">
+            <img src="assets/img/projects/omnifoodproject.jpeg" alt="" />
+          </div>
+
+          <div class="project__details">
+            <div class="project__card__tags">
+              <span class="html">html</span>
+              <span class="css">css</span>
+              <span class="javascript">java script</span>
+              <span class="reactjs">React</span>
+              <span class="nodejs">node.js</span>
+              <span class="mongodb">mongo db</span>
+              <span class="php">php</span>
+              <span class="csharp">c#</span>
+            </div>
+
+            <div class="project__card__title">
+              Omni Food Products | Healthy Food Plans
+            </div>
+
+            <div class="project__card__buttons">
+              <button class="button-1__back-layer">
+                <a class="button-1__front-layer">Preview</a>
+              </button>
+              <button class="button-1__back-layer">
+                <a class="button-1__front-layer">View on Github</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer_logo">
+        <img src="/assets/img/logo.png" alt="" />
+      </div>
+
+      <div class="footer_credits">ZAYN JABER &copy2024</div>
+
+      <div class="footer_socials">
+        <a href="https://github.com/zaynjaber" target="_blank">
+          <div class="footer__socials__icon">
+            <img src="assets/img/github-logo.png" alt="" />
+          </div>
+        </a>
+
+        <a href="mailto:zynjaber@gmail.com" target="_blank">
+          <div class="footer__socials__icon">
+            <img src="assets/img/mail-logo.png" alt="" />
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/zaynjaber/" target="_blank">
+          <div class="footer__socials__icon">
+            <img
+              style="filter: invert()"
+              src="assets/svg/linkedin.png"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+
+      <div class="footer_return-hero">
+        <a href="/#">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#fafafa"
+              d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
