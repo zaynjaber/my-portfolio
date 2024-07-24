@@ -20,21 +20,19 @@
       t.apply(this, arguments)
     );
   }
+
   var s = {
       strings: [
         `
-      
-        Hey there, I'm Zayn Jaber,
-        I am a hard working computer science student from michigan in my third
-        and final year who aims to evolve, innovate, and inspire through
-        technology. I’ve found my passion in web development since i was
-        young. I love spending time coding and encountering new challenges.
-        I’m highly adaptable to new challenges and projects.
-        I have a great background in developing and implementing software solutions and
-        Proficient in various programming languages and frameworks. 
-
-        What really drives me is bringing theory to life in practical projects. 
-        I thrive on the challenge of applying my knowledge to real-world scenarios, creating meaningful solutions along the way.
+        Hey there! I’m Zayn Jaber, 
+        a dedicated computer science student from Michigan, 
+        currently in my second and third year. 
+        My journey in technology is fueled by a passion for web development that started at a young age. 
+        I thrive on coding and love tackling new challenges.
+        I am constantly learning and growing. 
+        Every project is an opportunity to expand my skills and understand the intricacies of software development. 
+        I may still be in the early stages of my career, 
+        but my enthusiasm and commitment drive me to keep improving and exploring new technologies.
       `,
       ],
       stringsElement: null,
